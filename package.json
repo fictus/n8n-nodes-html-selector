@@ -1,0 +1,35 @@
+{
+  "author": "Your Name <you@example.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fictus/n8n-nodes-html-selector.git"
+  },
+  "homepage": "https://github.com/fictus/n8n-nodes-html-selector#readme",
+  "name": "n8n-nodes-html-selector",
+  "version": "0.1.0",
+  "description": "n8n community node: select elements from an HTML string with CSS selectors (jQuery-style) and extract text, HTML or attributes.",
+  "keywords": ["n8n-community-node-package", "html", "css-selector", "cheerio", "scraping"],
+  "license": "MIT",
+  "main": "dist/nodes/HtmlSelector/HtmlSelector.node.js",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').copyFileSync('nodes/HtmlSelector/htmlSelector.svg','dist/nodes/HtmlSelector/htmlSelector.svg')\"",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "nodes": ["dist/nodes/HtmlSelector/HtmlSelector.node.js"]
+  },
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "n8n-workflow": "*",
+    "typescript": "^5.4.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
