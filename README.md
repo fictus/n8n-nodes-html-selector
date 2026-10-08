@@ -42,7 +42,7 @@ Unverified community packages must be allowed on your instance (`N8N_UNVERIFIED_
 Useful for Docker setups where the data folder is mounted from the host. Download this repository (or the npm tarball), build it, and place it in n8n's `custom` folder:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/n8n-nodes-html-selector.git
+git clone https://github.com/fictus/n8n-nodes-html-selector.git
 cd n8n-nodes-html-selector
 npm install
 npm run build
@@ -231,7 +231,7 @@ Developed and tested on self-hosted n8n 2.x (Docker). It uses the standard `n8nN
 ## Development
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/n8n-nodes-html-selector.git
+git clone https://github.com/fictus/n8n-nodes-html-selector.git
 cd n8n-nodes-html-selector
 npm install
 npm run build     # compiles TypeScript to ./dist and copies the icon
